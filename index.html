@@ -1,81 +1,24 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boldog névnapot és nőnapot!</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #ffebf0;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        h1, h2 {
-            margin: 10px;
-            text-align: center;
-        }
-        h1 {
-            color: #e60073;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #ff5733;
-            font-size: 1.8em;
-        }
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: red;
-            opacity: 0.7;
-            animation: fall linear infinite;
-            top: -10px;
-        }
-        @keyframes fall {
-            from {
-                transform: translateY(-10px);
-            }
-            to {
-                transform: translateY(100vh);
-            }
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Dundun csirke weboldal</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f3e3;
+    }
+    img {
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-    <h1>Boldog Szülinapot Gombooooooc! 🎉</h1>
-    <script>
-        function createConfetti() {
-            const confetti = document.createElement("div");
-            confetti.classList.add("confetti");
-            document.body.appendChild(confetti);
-            
-            confetti.style.left = Math.random() * 100 + "vw";
-            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-            confetti.style.animationDuration = Math.random() * 2 + 3 + "s";
-            confetti.style.opacity = Math.random();
-            
-            setTimeout(() => {
-                confetti.remove();
-            }, 5000);
-        }
-        
-        setInterval(createConfetti, 200);
-    </script>
+  <img src="https://i.imgur.com/5LZ3FEM.png" alt="Dundun csirke">
 </body>
 </html>
